@@ -1,0 +1,47 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+  "primary": #002060,
+  "secondary": #23ACE3,
+  "dark": #343a40,
+  "success": #28a745,
+  "info": #17a2b8,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+);
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary-color: #002060;
+$secondary-color: #23ACE3;
+$white-color: white;
+$black-color: #000;
+$tertiary-color: #0e0532;
+$dark-color: #001524;
+
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: Georgia, serif;
+}
+
+p {
+  text-align: justify !important;
+}
+
+#navbar {
+  .nav-link {
+    color: $white-color;
+    padding: 25px 25px !important;
+    font-size: 18px;
+    text-transform: uppercase;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
