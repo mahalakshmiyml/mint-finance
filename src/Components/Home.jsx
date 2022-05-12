@@ -1,10 +1,12 @@
 import React from "react";
-import { Col, Container, Image, Row } from "react-bootstrap";
+import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import Banner from "../Components/images/banner.png";
 import Image1 from "../Components/images/image-1.png";
 import Image2 from "../Components/images/image-2.png";
+// import Modals from "./Includes/Modals";
 
 const Home = () => {
+  
   return (
     <main>
       {/* Banner starts */}
@@ -23,10 +25,14 @@ const Home = () => {
             <Col md={12}>
               <div className="py-3 py-md-3 bg-primary text-center text-white">
                 <h2 className="text-center">Consulting</h2>
-                <p className="text-center">
+               
                   {" "}
-                  Click to Enquire about Mint Finance Consulting
-                </p>
+                  <Button
+                className="btn btn-success text-white text-uppercase form-control"
+                type="submit"
+              >
+                Click to Enquire about Mint Finance Consulting
+              </Button>
               </div>
             </Col>
           </Row>
@@ -384,6 +390,8 @@ ipsum lorem ipsum lorem ipsum lorem ipsum.</li>
               </Container>
             </div>
     {/* About Ends */}
+
+    {/* <Modals /> */}
     </main>
   );
 };
